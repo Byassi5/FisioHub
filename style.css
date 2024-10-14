@@ -1,0 +1,89 @@
+body{
+    background-color: black;
+    background-image:  url("./fundo preto.png");
+    
+}
+
+.cor{
+    background-color: rgb(252, 252, 252);
+}
+
+
+header{
+    height: 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 90px;
+    margin: 10px;
+
+}
+
+.button{
+    margin: 10px;
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+    border-radius: 15px;
+    background-color:white;
+    color: rgb(0, 0, 0);
+    font-size: 0.95rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+#fcentral{
+    width: 700px;
+    display: flex;
+
+  
+}
+section{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 800px;
+    flex-direction: column;
+}
+
+.comece{
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    font-size: 0.95rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#modo{
+    background-color: transparent;
+}
+
+footer{
+    display: flex;
+    justify-content:flex-end;
+    height: 50px;
+    margin: 0 10 10 10;
+
+}
+
+
+
+.escuro{
+    margin: 10px;
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+    border-radius: 30px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-size: 0.95rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
