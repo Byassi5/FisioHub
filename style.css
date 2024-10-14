@@ -1,55 +1,52 @@
-body{
+body {
     background-color: black;
-    background-image:  url("./fundo preto.png");
-    
+    background-image: url("./fundo preto.png");
 }
 
-.cor{
+.cor {
     background-color: rgb(252, 252, 252);
 }
 
-
-header{
+header {
     height: 100px;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 10px; 
 }
 
-.logo{
+.logo {
     width: 90px;
     margin: 10px;
-
 }
 
-.button{
+.button {
     margin: 10px;
     padding: 5px;
     width: 100px;
     text-align: center;
     border-radius: 15px;
-    background-color:white;
+    background-color: white;
     color: rgb(0, 0, 0);
     font-size: 0.95rem;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-#fcentral{
-    width: 700px;
-    display: flex;
 
-  
-}
-section{
+#fcentral {
+    width: 90%; 
+    max-width: 700px; 
     display: flex;
-    justify-content:center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
     align-items: center;
     height: 800px;
     flex-direction: column;
 }
 
-.comece{
+.comece {
     width: 150px;
     height: 50px;
     border-radius: 15px;
@@ -59,23 +56,73 @@ section{
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-#modo{
+
+#modo {
     background-color: transparent;
 }
 
-footer{
+footer {
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
     height: 50px;
-    margin: 0 10 10 10;
-
+    margin: 0 10px;
 }
 
 
+@media (max-width: 600px) {
+    header {
+        flex-direction: column; 
+        height: auto; 
+    }
 
-.escuro{
+    .button {
+        width: 90%; 
+    }
+
+    #fcentral {
+        flex-direction: column; 
+        width: 100%; 
+    }
+
+    section {
+        height: auto; 
+        padding: 20px; 
+    }
+
+    .comece {
+        width: 100%; 
+    }
+}
+
+
+@media (min-width: 600px) and (max-width: 900px) {
+    #fcentral {
+        flex-direction: row; 
+    }
+
+    .button {
+        width: 80%; 
+    }
+}
+
+
+@media (min-width: 900px) {
+    #fcentral {
+        width: 700px; 
+    }
+
+    .button {
+        width: 100px; 
+    }
+
+    section {
+        height: 800px; 
+    }
+}
+
+.escuro {
     margin: 10px;
     padding: 5px;
     width: 100px;
@@ -84,6 +131,5 @@ footer{
     background-color: white;
     color: rgb(0, 0, 0);
     font-size: 0.95rem;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
